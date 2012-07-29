@@ -1,8 +1,13 @@
 use strict;
 use warnings;
 
-my @array = qw('a' 'b' 'c' 'd' 'e' 'f');
-my @xyz = qw('X' 'Y' 'Z');
-my @removed = splice(@array);
-print "\@array = @array\n";
-print "\@removed = @removed\n";
+my %hash = (
+    '結城浩' => 36,
+    '佐藤花子' => 22,
+    'とむら' => 21,
+    '高橋マモル' => 22,
+    );
+my @keys = keys(%hash);
+my @values = values(%hash);
+print join(',', @keys), "\n";
+print join(',', @values), "\n";
