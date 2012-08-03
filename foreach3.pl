@@ -3,7 +3,7 @@ use warnings;
 
 open(FILE, 'file.txt') or die "$!";
 foreach my $line (<FILE>) {
-	chomp ($line);
+	chomp($line);
 	print $line;
 }
 close(FILE);
