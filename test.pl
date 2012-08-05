@@ -1,8 +1,11 @@
 use strict;
 use warnings;
 
-open(FILE, 'file.txt') or die "$!";
-while (<FILE>) {
-	print $_;
+my $pattern = "";
+my $string = "point0";
+
+if ($string =~ /^point[^5\D]$/) {
+	print "$& --- Match!\n";
+} else {
+	print "No match\n";
 }
-close(FILE);
