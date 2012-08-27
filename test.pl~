@@ -1,0 +1,7 @@
+use strict;
+use warnings;
+
+my $line = '12:34, 56 and 78, 90';
+foreach ($line =~ /\d+/g) {
+    print "$_, ";
+}
