@@ -5,7 +5,7 @@ $x = 123;
 print "$x\n";
 {
     print "$x\n";
-    my $x = 456;
+    local $x = 456;
     &print_x;
     print "$x\n";
 }
