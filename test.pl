@@ -1,20 +1,8 @@
-#use strict;
+use strict;
 use warnings;
 
-$x = 123;
-print "$x\n";
-{
-    print "$x\n";
-    local $x = 456;
-    &print_x;
-    print "$x\n";
+open(FILE, 'file.txt') or die "$!";
+while (my $line = <FILE>) {
+    print $line;
 }
-print "$x\n";
-&print_x;
-print "$x\n";
-
-sub print_x {
-    print "&print_x: $x\n";
-    $x .= 'x';
-    print "&print_x: $x\n";
-}
+close(FILE);

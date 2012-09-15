@@ -1,0 +1,6 @@
+hanako,65,90,100
+kazuma,8,7,23
+kouichi,74,31,41
+tarou,100,95,98
+shinji,55,48,79
+santarou,74,41,59
